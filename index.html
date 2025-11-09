@@ -1,83 +1,444 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Coming Soon - Start Bootstrap Theme</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Background Video-->
-        <video class="bg-video" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop"><source src="assets/mp4/bg.mp4" type="video/mp4" /></video>
-        <!-- Masthead-->
-        <div class="masthead">
-            <div class="masthead-content text-white">
-                <div class="container-fluid px-4 px-lg-0">
-                    <h1 class="fst-italic lh-1 mb-4">Our Website is Coming Soon</h1>
-                    <p class="mb-5">We're working hard to finish the development of this site. Sign up below to receive updates and to be notified when we launch!</p>
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- * * SB Forms Contact Form * *-->
-                    <!-- * * * * * * * * * * * * * * *-->
-                    <!-- This form is pre-integrated with SB Forms.-->
-                    <!-- To make this form functional, sign up at-->
-                    <!-- https://startbootstrap.com/solution/contact-forms-->
-                    <!-- to get an API token!-->
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Email address input-->
-                        <div class="row input-group-newsletter">
-                            <div class="col"><input class="form-control" id="email" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                            <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                        </div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:required">An email is required.</div>
-                        <div class="invalid-feedback mt-2" data-sb-feedback="email:email">Email is not valid.</div>
-                        <!-- Submit success message-->
-                        <!---->
-                        <!-- This is what your users will see when the form-->
-                        <!-- has successfully submitted-->
-                        <div class="d-none" id="submitSuccessMessage">
-                            <div class="text-center mb-3 mt-2">
-                                <div class="fw-bolder">Form submission successful!</div>
-                                To activate this form, sign up at
-                                <br />
-                                <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                            </div>
-                        </div>
-                        <!-- Submit error message-->
-                        <!---->
-                        <!-- This is what your users will see when there is-->
-                        <!-- an error submitting the form-->
-                        <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                    </form>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuros en Marcha - Educación Rural</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-bus text-purple-600 text-3xl mr-3"></i>
+                    <span class="text-2xl font-bold text-gray-800">Futuros en Marcha</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-700 hover:text-purple-600 transition">Inicio</a>
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition">Sobre Nosotros</a>
+                    <a href="#how-it-works" class="text-gray-700 hover:text-purple-600 transition">Cómo Funciona</a>
+                    <a href="#sponsors" class="text-gray-700 hover:text-purple-600 transition">Patrocinios</a>
+                    <a href="#volunteers" class="text-gray-700 hover:text-purple-600 transition">Voluntariado</a>
+                    <a href="#impact" class="text-gray-700 hover:text-purple-600 transition">Impacto</a>
+                    <a href="#contact" class="text-gray-700 hover:text-purple-600 transition">Contacto</a>
                 </div>
             </div>
         </div>
-        <!-- Social Icons-->
-        <!-- For more icon options, visit https://fontawesome.com/icons?d=gallery&p=2&s=brands-->
-        <div class="social-icons">
-            <div class="d-flex flex-row flex-lg-column justify-content-center align-items-center h-100 mt-3 mt-lg-0">
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-twitter"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-facebook-f"></i></a>
-                <a class="btn btn-dark m-3" href="#!"><i class="fab fa-instagram"></i></a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-20 pb-32 px-4">
+        <div class="max-w-7xl mx-auto pt-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Rumbo a un futuro mejor
+                    </h1>
+                    <p class="text-xl mb-8 text-purple-100">
+                        Llevamos educación a comunidades rurales para que ningún niño deje de soñar.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#sponsors" class="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold hover:bg-purple-50 transition shadow-lg text-center">
+                            <i class="fas fa-heart mr-2"></i>Patrocina el Proyecto
+                        </a>
+                        <a href="#volunteers" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition text-center">
+                            <i class="fas fa-hands-helping mr-2"></i>Sé Voluntario
+                        </a>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
+                        <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600&h=400&fit=crop" alt="Niños aprendiendo" class="rounded-2xl shadow-2xl w-full">
+                        <div class="absolute -bottom-6 -left-6 bg-yellow-400 text-purple-900 px-6 py-3 rounded-full font-bold shadow-xl">
+                            <i class="fas fa-graduation-cap mr-2"></i>Educación para Todos
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Sobre el Proyecto</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=600&h=400&fit=crop" alt="Interior del camión educativo" class="rounded-2xl shadow-2xl">
+                </div>
+                <div>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        <span class="font-bold text-purple-600">Futuros en Marcha</span> es un proyecto que busca acercar la educación a comunidades rurales. Nuestro camión educativo viaja con materiales, tablets y docentes capacitados, llevando clases que motivan a los niños a continuar su educación y evitar la deserción escolar.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-2xl mr-4 mt-1"></i>
+                            <p class="text-gray-700">Educación accesible para comunidades remotas</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-2xl mr-4 mt-1"></i>
+                            <p class="text-gray-700">Tecnología educativa moderna y adaptada</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-2xl mr-4 mt-1"></i>
+                            <p class="text-gray-700">Docentes capacitados y comprometidos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">¿Cómo Funciona?</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
+                    <div class="bg-purple-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-route text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Viaje Educativo</h3>
+                    <p class="text-gray-700">
+                        El camión llega a comunidades rurales llevando todo lo necesario para aprender: libros, materiales didácticos y tecnología educativa.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
+                    <div class="bg-blue-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Clases Interactivas</h3>
+                    <p class="text-gray-700">
+                        Los niños reciben enseñanza adaptada a sus necesidades con tecnología educativa moderna y metodologías innovadoras.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-green-50 to-green-100 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
+                    <div class="bg-green-600 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Impacto a Largo Plazo</h3>
+                    <p class="text-gray-700">
+                        Fomentamos que más niños permanezcan en la escuela y sigan creciendo, construyendo un futuro mejor para sus comunidades.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sponsors Section -->
+    <section id="sponsors" class="py-20 bg-gradient-to-br from-purple-600 to-purple-800">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">Patrocinios</h2>
+                <p class="text-xl text-purple-100 mb-8">
+                    Tu apoyo puede transformar vidas. Con tu patrocinio, llevamos educación y esperanza a más niños cada día.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Beneficios del Patrocinio</h3>
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="text-center">
+                        <i class="fas fa-image text-purple-600 text-3xl mb-3"></i>
+                        <p class="text-sm text-gray-700">Logo en el camión educativo</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-share-alt text-purple-600 text-3xl mb-3"></i>
+                        <p class="text-sm text-gray-700">Mención en redes sociales</p>
+                    </div>
+                    <div class="text-center">
+                        <i class="fas fa-certificate text-purple-600 text-3xl mb-3"></i>
+                        <p class="text-sm text-gray-700">Certificado de reconocimiento</p>
+                    </div>
+                </div>
+                
+                <form id="sponsorForm" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nombre/Empresa *</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email *</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Teléfono *</label>
+                            <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Tipo de Patrocinio</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                                <option>Mensual</option>
+                                <option>Anual</option>
+                                <option>Donación única</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Mensaje (opcional)</label>
+                        <textarea rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-purple-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-purple-700 transition shadow-lg">
+                        <i class="fas fa-heart mr-2"></i>Conviértete en Patrocinador
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteers Section -->
+    <section id="volunteers" class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Voluntariado</h2>
+                <p class="text-xl text-gray-700 mb-8">
+                    Sé parte del cambio. Ayúdanos a dar clases, organizar actividades y acompañar a los niños en su camino hacia un futuro mejor.
+                </p>
+            </div>
+            
+            <div class="bg-white rounded-3xl shadow-2xl p-8 md:p-12">
+                <form id="volunteerForm" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Nombre Completo *</label>
+                            <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Email *</label>
+                            <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Teléfono *</label>
+                            <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-semibold mb-2">Disponibilidad *</label>
+                            <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                                <option value="">Selecciona...</option>
+                                <option>Fines de semana</option>
+                                <option>Entre semana</option>
+                                <option>Tiempo completo</option>
+                                <option>Ocasional</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">Habilidades y Experiencia *</label>
+                        <textarea rows="4" required placeholder="Cuéntanos sobre tus habilidades, experiencia docente, áreas de conocimiento, etc." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 font-semibold mb-2">¿Por qué quieres ser voluntario?</label>
+                        <textarea rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-purple-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-purple-700 transition shadow-lg">
+                        <i class="fas fa-hands-helping mr-2"></i>Inscribirme como Voluntario
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact Section -->
+    <section id="impact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Nuestro Impacto</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-xl text-gray-700">Los números que nos motivan a seguir adelante</p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8 mb-16">
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl">
+                        <i class="fas fa-child text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-purple-600 mb-2">500+</h3>
+                    <p class="text-gray-700 font-semibold">Niños Beneficiados</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl">
+                        <i class="fas fa-map-marked-alt text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-blue-600 mb-2">25+</h3>
+                    <p class="text-gray-700 font-semibold">Comunidades Visitadas</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-green-500 to-green-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl">
+                        <i class="fas fa-clock text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-green-600 mb-2">2,000+</h3>
+                    <p class="text-gray-700 font-semibold">Horas de Clase</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-yellow-500 to-yellow-700 w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl">
+                        <i class="fas fa-smile text-white text-3xl"></i>
+                    </div>
+                    <h3 class="text-4xl font-bold text-yellow-600 mb-2">95%</h3>
+                    <p class="text-gray-700 font-semibold">Satisfacción</p>
+                </div>
+            </div>
+
+            <div class="bg-gradient-to-r from-purple-50 to-blue-50 rounded-3xl p-8 md:p-12">
+                <h3 class="text-3xl font-bold text-gray-800 mb-8 text-center">Testimonios</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://i.pravatar.cc/150?img=1" alt="Testimonio" class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <p class="font-bold text-gray-800">María González</p>
+                                <p class="text-sm text-gray-600">Docente Voluntaria</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">"Ver la emoción en los ojos de los niños cuando aprenden algo nuevo es indescriptible. Este proyecto está cambiando vidas realmente."</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg">
+                        <div class="flex items-center mb-4">
+                            <img src="https://i.pravatar.cc/150?img=5" alt="Testimonio" class="w-16 h-16 rounded-full mr-4">
+                            <div>
+                                <p class="font-bold text-gray-800">Rosa Martínez</p>
+                                <p class="text-sm text-gray-600">Madre de Familia</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 italic">"Gracias a Futuros en Marcha, mi hijo ya no quiere dejar la escuela. Ahora sueña con ser ingeniero y tenemos esperanza."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800 text-white">
+        <div class="max-w-4xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">Contacto</h2>
+                <p class="text-xl text-gray-300">¿Tienes preguntas? Estamos aquí para ayudarte</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <form id="contactForm" class="space-y-4">
+                        <div>
+                            <label class="block text-gray-300 font-semibold mb-2">Nombre *</label>
+                            <input type="text" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent text-white">
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 font-semibold mb-2">Email *</label>
+                            <input type="email" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent text-white">
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 font-semibold mb-2">Mensaje *</label>
+                            <textarea rows="4" required class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:ring-2 focus:ring-purple-600 focus:border-transparent text-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-purple-600 text-white py-3 rounded-lg font-bold hover:bg-purple-700 transition">
+                            <i class="fas fa-paper-plane mr-2"></i>Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Información de Contacto</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-purple-400 text-xl mr-4"></i>
+                                <span>contacto@futurosenmarcha.org</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-purple-400 text-xl mr-4"></i>
+                                <span>+52 (644) 123-4567</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-purple-400 text-xl mr-4"></i>
+                                <span>Ciudad Obregón, Sonora, México</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">Síguenos</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-700 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-700 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-purple-600 w-12 h-12 rounded-full flex items-center justify-center hover:bg-purple-700 transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-8">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p>&copy; 2025 Futuros en Marcha. Todos los derechos reservados.</p>
+            <p class="mt-2">Transformando vidas a través de la educación</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Form submission handlers
+        document.getElementById('sponsorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu interés en patrocinar! Nos pondremos en contacto contigo pronto.');
+            this.reset();
+        });
+
+        document.getElementById('volunteerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por querer ser voluntario! Revisaremos tu solicitud y te contactaremos pronto.');
+            this.reset();
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Mensaje enviado! Te responderemos lo antes posible.');
+            this.reset();
+        });
+    </script>
+</body>
 </html>
